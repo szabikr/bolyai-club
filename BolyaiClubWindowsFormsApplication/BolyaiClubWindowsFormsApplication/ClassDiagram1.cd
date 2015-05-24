@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BolyaiClubWindowsFormsApplication.Controller.DatabaseManager" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAABABAAIAAACAEAKAAAAAAACQIAAgEAAAEBAAAEA=</HashCode>
+      <FileName>Controller\DatabaseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.BolyaiClubDbContext" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAYAEAAAAAAAAAAACEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\BolyaiClubDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.Person" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACAAAAAEAAAAAAQCAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.Price" Collapsed="true">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAEABAAABAAAIAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Price.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.Rent" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAQAAABAAABAAABgAIAAgAQMQBAAAAAAAAAA=</HashCode>
+      <FileName>Model\Rent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.Renter" Collapsed="true">
+    <Position X="10.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAAAAEAAAEAAAAAIAAAQAAAAIAAAAAAAAAAAE=</HashCode>
+      <FileName>Model\Renter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.Room" Collapsed="true">
+    <Position X="13" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAQAEAAAEAAAAAAQCAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Model.User" Collapsed="true">
+    <Position X="13" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAEAAAEAAAAAAgCCAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Program" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Properties.Resources" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.Properties.Settings" Collapsed="true">
+    <Position X="15.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.BasePanel" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAIAAAAABAAAAACAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>View\BasePanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.ContentPanel" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAAAAAAAQAAAAAQAAAAAACgAACAAEAAAAAAAAACAA=</HashCode>
+      <FileName>View\ContentPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.LoginPanel" Collapsed="true">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAQACAABAACgACAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>View\LoginPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.MainForm" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAACAAAICAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.MainPanel" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QFAQSAAEAAQAAAAAAAAAAAAAAQCBAAEAAAAAAAAAEAg=</HashCode>
+      <FileName>View\MainPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.MenuPanel" Collapsed="true">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAAAAAAAAAAAQAAAATAAEAAEIACAAAQBAABAA=</HashCode>
+      <FileName>View\MenuPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.ActionPanel" Collapsed="true">
+    <Position X="6" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ActionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.ClientActionPanel" Collapsed="true">
+    <Position X="5.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ClientActionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.ClientUpdaterPanel" Collapsed="true">
+    <Position X="5.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ClientUpdaterPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.DataUpdaterPanel" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAAAAAAAAEAAAAAAAACQAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>View\DataUpdaterPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.PriceActionPanel" Collapsed="true">
+    <Position X="8.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PriceActionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.PriceUpdaterPanel" Collapsed="true">
+    <Position X="8.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\PriceUpdaterPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.RoomActionPanel" Collapsed="true">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RoomActionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.RoomUpdaterPanel" Collapsed="true">
+    <Position X="3.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RoomUpdaterPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.UserActionPanel" Collapsed="true">
+    <Position X="7" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserActionPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.UserPanel" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAEABECCUAAAAAAAAgAAAACAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>View\UserPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BolyaiClubWindowsFormsApplication.View.UserUpdaterPanel" Collapsed="true">
+    <Position X="7" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\UserUpdaterPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -38,6 +38,18 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ModernMetroUI\MetroDLL\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ModernMetroUI\MetroDLL\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ModernMetroUI\MetroDLL\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -52,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\BolyaiClubDbContext.cs" />
+    <Compile Include="Controller\DatabaseManager.cs" />
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Price.cs" />
     <Compile Include="Model\Rent.cs" />
@@ -60,11 +73,191 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ActionPanel.Designer.cs">
+      <DependentUpon>ActionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BasePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\BasePanel.Designer.cs">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ClientActionPanel.Designer.cs">
+      <DependentUpon>ClientActionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientAddPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ClientAddPanel.Designer.cs">
+      <DependentUpon>ClientAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientInputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ClientInputPanel.Designer.cs">
+      <DependentUpon>ClientInputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientModifyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ClientModifyPanel.Designer.cs">
+      <DependentUpon>ClientModifyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientRemovePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ClientRemovePanel.Designer.cs">
+      <DependentUpon>ClientRemovePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ClientUpdaterPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ContentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ContentPanel.Designer.cs">
+      <DependentUpon>ContentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DataUpdaterPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\DataUpdaterPanel.Designer.cs">
+      <DependentUpon>DataUpdaterPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\LoginPanel.Designer.cs">
+      <DependentUpon>LoginPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\MainPanel.Designer.cs">
+      <DependentUpon>MainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MenuPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\MenuPanel.Designer.cs">
+      <DependentUpon>MenuPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\PriceActionPanel.Designer.cs">
+      <DependentUpon>PriceActionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceAddPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\PriceAddPanel.Designer.cs">
+      <DependentUpon>PriceAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceInputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\PriceInputPanel.Designer.cs">
+      <DependentUpon>PriceInputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceModifyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\PriceModifyPanel.Designer.cs">
+      <DependentUpon>PriceModifyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceRemovePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\PriceRemovePanel.Designer.cs">
+      <DependentUpon>PriceRemovePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PriceUpdaterPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomActionPanel.Designer.cs">
+      <DependentUpon>RoomActionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomAddPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomAddPanel.Designer.cs">
+      <DependentUpon>RoomAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomInputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomInputPanel.Designer.cs">
+      <DependentUpon>RoomInputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomModifyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomModifyPanel.Designer.cs">
+      <DependentUpon>RoomModifyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomRemovePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\RoomRemovePanel.Designer.cs">
+      <DependentUpon>RoomRemovePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomUpdaterPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserActionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserActionPanel.Designer.cs">
+      <DependentUpon>UserActionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserAddPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserAddPanel.Designer.cs">
+      <DependentUpon>UserAddPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserInputPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserInputPanel.Designer.cs">
+      <DependentUpon>UserInputPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserModifyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserModifyPanel.Designer.cs">
+      <DependentUpon>UserModifyPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserRemovePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UserRemovePanel.Designer.cs">
+      <DependentUpon>UserRemovePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserUpdaterPanel.cs">
+      <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,10 +267,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -93,7 +292,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controller\" />
+    <None Include="Resources\UserPicturePlaceholder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
