@@ -12,7 +12,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
         public User()
         {
             Rents = new HashSet<Rent>();
-            Renters = new HashSet<Renter>();
+            Clients = new HashSet<Client>();
         }
 
         public int UserId { get; set; }
@@ -29,7 +29,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
 
         public virtual ICollection<Rent> Rents { get; set; }
 
-        public virtual ICollection<Renter> Renters { get; set; }
+        public virtual ICollection<Client> Clients { get; set; }
 
     }
 }

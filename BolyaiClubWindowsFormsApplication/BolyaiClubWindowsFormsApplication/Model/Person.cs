@@ -11,7 +11,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
     {
         public Person()
         {
-            Renters = new HashSet<Renter>();
+            Clients = new HashSet<Client>();
             Users = new HashSet<User>();
         }
 
@@ -28,7 +28,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
         [StringLength(15)]
         public string Mobile { get; set; }
 
-        public virtual ICollection<Renter> Renters { get; set; }
+        public virtual ICollection<Client> Clients { get; set; }
 
         public virtual ICollection<User> Users { get; set; }
 

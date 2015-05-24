@@ -14,5 +14,14 @@ namespace BolyaiClubWindowsFormsApplication.View
             InitializeComponent();
         }
 
+        protected override void actionButton_Click(object sender, EventArgs e)
+        {
+            base.actionButton_Click(sender, e);
+            if (!IsValidData())
+            {
+                return;
+            }
+        }
+
     }
 }

@@ -68,7 +68,7 @@
     <Compile Include="Model\Person.cs" />
     <Compile Include="Model\Price.cs" />
     <Compile Include="Model\Rent.cs" />
-    <Compile Include="Model\Renter.cs" />
+    <Compile Include="Model\Client.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
@@ -277,6 +277,7 @@
     <None Include="ClassDiagram3.cd" />
     <None Include="ClassDiagram4.cd" />
     <None Include="ClassDiagram5.cd" />
+    <None Include="ClassDiagram6.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

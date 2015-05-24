@@ -13,7 +13,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
 
         public int RoomId { get; set; }
 
-        public int RenterId { get; set; }
+        public int ClientId { get; set; }
 
         public int UserId { get; set; }
 
@@ -37,7 +37,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
 
         public virtual Room Room { get; set; }
 
-        public virtual Renter Renter { get; set; }
+        public virtual Client Client { get; set; }
 
         public virtual User User { get; set; }
     }

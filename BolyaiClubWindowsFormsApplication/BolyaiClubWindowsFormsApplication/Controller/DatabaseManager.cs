@@ -18,11 +18,11 @@ namespace BolyaiClubWindowsFormsApplication.Controller
             }
         }
 
-        public static void AddRenter(Renter renter)
+        public static void AddRenter(Client renter)
         {
             using (var context = new BolyaiClubDbContext())
             {
-                context.Renters.Add(renter);
+                context.Clients.Add(renter);
                 context.SaveChanges();
             }
         }
@@ -108,20 +108,20 @@ namespace BolyaiClubWindowsFormsApplication.Controller
             }
         }
 
-        internal static Renter GetRenter(int RenterId)
+        internal static Client GetRenter(int RenterId)
         {
             using (var context = new BolyaiClubDbContext())
             {
-                return context.Renters.Find(RenterId);
+                return context.Clients.Find(RenterId);
             }
         }
 
-        public static List<Renter> GetRenters()
+        public static List<Client> GetRenters()
         {
-            List<Renter> renters = new List<Renter>();
+            List<Client> renters = new List<Client>();
             using (var context = new BolyaiClubDbContext())
             {
-                IEnumerable<Renter> renterResult = from r in context.Renters
+                IEnumerable<Client> renterResult = from r in context.Clients
                                                    select r;
                 foreach (var renter in renterResult)
                 {
@@ -162,13 +162,13 @@ namespace BolyaiClubWindowsFormsApplication.Controller
         }
 
         // Removes
-        internal static void RemoveRenter(Renter renter)
+        internal static void RemoveRenter(Client renter)
         {
             Person person = GetPerson(renter.PersonId);
             using (var context = new BolyaiClubDbContext())
             {
-                context.Renters.Attach(renter);
-                context.Renters.Remove(renter);
+                context.Clients.Attach(renter);
+                context.Clients.Remove(renter);
                 context.SaveChanges();
             }
             RemovePerson(person);

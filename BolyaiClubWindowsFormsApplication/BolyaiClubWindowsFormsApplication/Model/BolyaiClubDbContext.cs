@@ -17,7 +17,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
         public virtual DbSet<Person> People { get; set; }
         public virtual DbSet<Price> Prices { get; set; }
         public virtual DbSet<Rent> Rents { get; set; }
-        public virtual DbSet<Renter> Renters { get; set; }
+        public virtual DbSet<Client> Clients { get; set; }
         public virtual DbSet<Room> Rooms { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -36,7 +36,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
                 .IsUnicode(false);
 
             modelBuilder.Entity<Person>()
-                .HasMany(e => e.Renters)
+                .HasMany(e => e.Clients)
                 .WithRequired(e => e.Person)
                 .HasForeignKey(e => e.PersonId)
                 .WillCascadeOnDelete(false);
@@ -53,10 +53,10 @@ namespace BolyaiClubWindowsFormsApplication.Model
                 .HasForeignKey(e => e.PriceId)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<Renter>()
+            modelBuilder.Entity<Client>()
                 .HasMany(e => e.Rents)
-                .WithRequired(e => e.Renter)
-                .HasForeignKey(e => e.RenterId)
+                .WithRequired(e => e.Client)
+                .HasForeignKey(e => e.ClientId)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Room>()
@@ -86,7 +86,7 @@ namespace BolyaiClubWindowsFormsApplication.Model
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<User>()
-                .HasMany(e => e.Renters)
+                .HasMany(e => e.Clients)
                 .WithRequired(e => e.User)
                 .HasForeignKey(e => e.CreatedBy)
                 .WillCascadeOnDelete(false);

@@ -84,7 +84,7 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.actionPanel.HorizontalScrollbarSize = 10;
             this.actionPanel.Location = new System.Drawing.Point(242, 15);
             this.actionPanel.Name = "actionPanel";
-            this.actionPanel.Size = new System.Drawing.Size(709, 417);
+            this.actionPanel.Size = new System.Drawing.Size(709, 457);
             this.actionPanel.TabIndex = 6;
             this.actionPanel.VerticalScrollbarBarColor = true;
             this.actionPanel.VerticalScrollbarHighlightOnWheel = false;

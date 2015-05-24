@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace BolyaiClubWindowsFormsApplication.View
 {
-    public partial class ActionPanel : MetroFramework.Controls.MetroPanel
+    public partial class PriceAddPanel : PriceInputPanel
     {
 
-        public ActionPanel()
+        public PriceAddPanel() : base()
         {
             InitializeComponent();
         }
 
-        protected virtual void actionButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        
     }
 }

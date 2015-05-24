@@ -7,14 +7,14 @@ using System.Data.Entity.Spatial;
 namespace BolyaiClubWindowsFormsApplication.Model
 {
     [Table("Renter")]
-    public class Renter
+    public class Client
     {
-        public Renter()
+        public Client()
         {
             Rents = new HashSet<Rent>();
         }
 
-        public int RenterId { get; set; }
+        public int ClientId { get; set; }
 
         public int PersonId { get; set; }
 
