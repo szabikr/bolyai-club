@@ -55,7 +55,7 @@ namespace BolyaiClubWindowsFormsApplication.View
 
         private void InitializeBackButton()
         {
-            this.backButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.UserPicturePlaceholder;
+            this.backButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.BackButton;
             this.backButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.backButton.Location = new System.Drawing.Point(0, 10);
             this.backButton.Name = "backButton";

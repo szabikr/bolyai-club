@@ -12,7 +12,7 @@ namespace BolyaiClubWindowsFormsApplication.View
         private void InitializeComponent()
         {
             this.makeReservationTile = new MetroFramework.Controls.MetroTile();
-            this.getReservationsTile = new MetroFramework.Controls.MetroTile();
+            this.showReservationsTile = new MetroFramework.Controls.MetroTile();
             this.roomsTile = new MetroFramework.Controls.MetroTile();
             this.unpaidInvoicesTile = new MetroFramework.Controls.MetroTile();
             this.financialReportTile = new MetroFramework.Controls.MetroTile();
@@ -31,18 +31,20 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.makeReservationTile.Text = "Make a Reservation";
             this.makeReservationTile.UseSelectable = true;
             this.makeReservationTile.UseStyleColors = true;
+            this.makeReservationTile.Click += makeReservationTile_Click;
             //
             // getReservationsTile
             //
-            this.getReservationsTile.ActiveControl = null;
-            this.getReservationsTile.Location = new System.Drawing.Point(58, 228);
-            this.getReservationsTile.Name = "getReservationsTile";
-            this.getReservationsTile.Size = new System.Drawing.Size(176, 114);
-            this.getReservationsTile.Style = MetroFramework.MetroColorStyle.Red;
-            this.getReservationsTile.TabIndex = 5;
-            this.getReservationsTile.Text = "Get Reservations";
-            this.getReservationsTile.UseSelectable = true;
-            this.getReservationsTile.UseStyleColors = true;
+            this.showReservationsTile.ActiveControl = null;
+            this.showReservationsTile.Location = new System.Drawing.Point(58, 228);
+            this.showReservationsTile.Name = "getReservationsTile";
+            this.showReservationsTile.Size = new System.Drawing.Size(176, 114);
+            this.showReservationsTile.Style = MetroFramework.MetroColorStyle.Red;
+            this.showReservationsTile.TabIndex = 5;
+            this.showReservationsTile.Text = "Get Reservations";
+            this.showReservationsTile.UseSelectable = true;
+            this.showReservationsTile.UseStyleColors = true;
+            this.showReservationsTile.Click += showReservationsTile_Click;
             //
             // roomsTile
             //
@@ -53,8 +55,11 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.roomsTile.Style = MetroFramework.MetroColorStyle.Orange;
             this.roomsTile.TabIndex = 3;
             this.roomsTile.Text = "Room";
+            this.roomsTile.TileImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.RoomTile;
+            this.roomsTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.roomsTile.UseSelectable = true;
             this.roomsTile.UseStyleColors = true;
+            this.roomsTile.UseTileImage = true;
             this.roomsTile.Click += roomsTile_Click;
             //
             // unpaidInvoicesTile
@@ -67,6 +72,7 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.unpaidInvoicesTile.TabIndex = 7;
             this.unpaidInvoicesTile.Text = "Unpaid Invoices";
             this.unpaidInvoicesTile.UseSelectable = true;
+            this.unpaidInvoicesTile.Click += unpaidInvoicesTile_Click;
             //
             // financialReportTile
             //
@@ -79,6 +85,7 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.financialReportTile.Text = " Financial Reports";
             this.financialReportTile.UseSelectable = true;
             this.financialReportTile.UseStyleColors = true;
+            this.financialReportTile.Click += financialReportTile_Click;
             //
             // pricesTile
             //
@@ -89,8 +96,11 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.pricesTile.Style = MetroFramework.MetroColorStyle.Lime;
             this.pricesTile.TabIndex = 10;
             this.pricesTile.Text = "Price";
+            this.pricesTile.TileImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.PriceTile;
+            this.pricesTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.pricesTile.UseSelectable = true;
             this.pricesTile.UseStyleColors = true;
+            this.pricesTile.UseTileImage = true;
             this.pricesTile.Click += pricesTile_Click;
             //
             // usersTile
@@ -102,8 +112,11 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.usersTile.Style = MetroFramework.MetroColorStyle.Purple;
             this.usersTile.TabIndex = 9;
             this.usersTile.Text = "User";
+            this.usersTile.TileImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.UserTile;
+            this.usersTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.usersTile.UseSelectable = true;
             this.usersTile.UseStyleColors = true;
+            this.usersTile.UseTileImage = true;
             this.usersTile.Click += usersTile_Click;
             //
             // clientsTile
@@ -115,14 +128,17 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.clientsTile.Style = MetroFramework.MetroColorStyle.Teal;
             this.clientsTile.TabIndex = 8;
             this.clientsTile.Text = "Client";
+            this.clientsTile.TileImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.ClientTile;
+            this.clientsTile.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.clientsTile.UseSelectable = true;
             this.clientsTile.UseStyleColors = true;
+            this.clientsTile.UseTileImage = true;
             this.clientsTile.Click += clientsTile_Click;
             //
             // MenuPanel
             //
             this.Controls.Add(this.makeReservationTile);
-            this.Controls.Add(this.getReservationsTile);
+            this.Controls.Add(this.showReservationsTile);
             this.Controls.Add(this.roomsTile);
             this.Controls.Add(this.unpaidInvoicesTile);
             this.Controls.Add(this.financialReportTile);
@@ -132,9 +148,13 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.Name = "MenuPanel";
         }
 
+        
+
+        
+
         private MetroFramework.Controls.MetroTile makeReservationTile;
         private MetroFramework.Controls.MetroTile roomsTile;
-        private MetroFramework.Controls.MetroTile getReservationsTile;
+        private MetroFramework.Controls.MetroTile showReservationsTile;
         private MetroFramework.Controls.MetroTile financialReportTile;
         private MetroFramework.Controls.MetroTile unpaidInvoicesTile;
         private MetroFramework.Controls.MetroTile pricesTile;

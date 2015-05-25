@@ -63,6 +63,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201505071114415_InitialCreate.cs" />
+    <Compile Include="Migrations\201505071114415_InitialCreate.Designer.cs">
+      <DependentUpon>201505071114415_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505240907353_RenterChangedToClient.cs" />
+    <Compile Include="Migrations\201505240907353_RenterChangedToClient.Designer.cs">
+      <DependentUpon>201505240907353_RenterChangedToClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\BolyaiClubDbContext.cs" />
     <Compile Include="Controller\DatabaseManager.cs" />
     <Compile Include="Model\Person.cs" />
@@ -84,6 +93,36 @@
     </Compile>
     <Compile Include="View\BasePanel.Designer.cs">
       <DependentUpon>BasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseClientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChooseClientPanel.Designer.cs">
+      <DependentUpon>ChooseClientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseDataPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChooseDataPanel.Designer.cs">
+      <DependentUpon>ChooseDataPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseFromListPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChooseFromListPanel.Designer.cs">
+      <DependentUpon>ChooseFromListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseRoomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChooseRoomPanel.Designer.cs">
+      <DependentUpon>ChooseRoomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChooseTimePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChooseTimePanel.Designer.cs">
+      <DependentUpon>ChooseTimePanel.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ClientActionPanel.cs">
       <SubType>Component</SubType>
@@ -130,6 +169,12 @@
     <Compile Include="View\DataUpdaterPanel.Designer.cs">
       <DependentUpon>DataUpdaterPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FinancialReportPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\FinancialReportPanel.Designer.cs">
+      <DependentUpon>FinancialReportPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -147,6 +192,12 @@
     </Compile>
     <Compile Include="View\MainPanel.Designer.cs">
       <DependentUpon>MainPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MakeReservationPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\MakeReservationPanel.Designer.cs">
+      <DependentUpon>MakeReservationPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="View\MenuPanel.cs">
       <SubType>Component</SubType>
@@ -220,6 +271,18 @@
     <Compile Include="View\RoomUpdaterPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="View\ShowReservationsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ShowReservationsPanel.Designer.cs">
+      <DependentUpon>ShowReservationsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UnpaidInvoicesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\UnpaidInvoicesPanel.Designer.cs">
+      <DependentUpon>UnpaidInvoicesPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserActionPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -259,6 +322,12 @@
     <Compile Include="View\UserUpdaterPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Migrations\201505071114415_InitialCreate.resx">
+      <DependentUpon>201505071114415_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505240907353_RenterChangedToClient.resx">
+      <DependentUpon>201505240907353_RenterChangedToClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -278,6 +347,7 @@
     <None Include="ClassDiagram4.cd" />
     <None Include="ClassDiagram5.cd" />
     <None Include="ClassDiagram6.cd" />
+    <None Include="ClassDiagram7.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -294,6 +364,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UserPicturePlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoneButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrevButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientAddButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientDeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientEditButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PriceAddButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PriceDeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PriceEditButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomAddButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomDeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomEditButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAddButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserDeleteButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserEditButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PriceTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomTile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserTile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

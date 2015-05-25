@@ -12,6 +12,7 @@ namespace BolyaiClubWindowsFormsApplication.View
         public void InitializeComponent()
         {
             this.titleLabel.Text = "Price - add";
+            this.actionButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.PriceAddButton;
         }
 
     }

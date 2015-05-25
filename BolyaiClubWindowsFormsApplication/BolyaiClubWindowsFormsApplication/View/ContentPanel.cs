@@ -13,6 +13,10 @@ namespace BolyaiClubWindowsFormsApplication.View
         public event EventHandler ClientSelected;
         public event EventHandler RoomSelected;
         public event EventHandler PriceSelected;
+        public event EventHandler MakeReservationSelected;
+        public event EventHandler FinancialReportSelected;
+        public event EventHandler ShowReservationsSelected;
+        public event EventHandler UnpaidInvoicesSelected;
 
         public ContentPanel()
         {
@@ -48,6 +52,38 @@ namespace BolyaiClubWindowsFormsApplication.View
             if (PriceSelected != null)
             {
                 PriceSelected(this, EventArgs.Empty);
+            }
+        }
+
+        protected void OnMakeReservationSelected()
+        {
+            if (MakeReservationSelected != null)
+            {
+                MakeReservationSelected(this, EventArgs.Empty);
+            }
+        }
+
+        protected void OnFinancialReportSelected()
+        {
+            if (FinancialReportSelected != null)
+            {
+                FinancialReportSelected(this, EventArgs.Empty);
+            }
+        }
+
+        protected void OnShowReservationsSelected()
+        {
+            if (ShowReservationsSelected != null)
+            {
+                ShowReservationsSelected(this, EventArgs.Empty);
+            }
+        }
+
+        protected void OnUnpaidInvoicesSelected()
+        {
+            if (UnpaidInvoicesSelected != null)
+            {
+                UnpaidInvoicesSelected(this, EventArgs.Empty);
             }
         }
 

@@ -50,6 +50,30 @@ namespace BolyaiClubWindowsFormsApplication.View
             showBackButton();
         }
 
+        public void OnMakeReservationSelected(object sender, EventArgs e)
+        {
+            this.activateSelectedPanel(new MakeReservationPanel());
+            showBackButton();
+        }
+
+        public void OnFinancialReportSelected(object sender, EventArgs e)
+        {
+            this.activateSelectedPanel(new FinancialReportPanel());
+            showBackButton();
+        }
+
+        public void OnShowReservationsSelected(object sender, EventArgs e)
+        {
+            this.activateSelectedPanel(new ShowReservationsPanel());
+            showBackButton();
+        }
+
+        public void OnUnpaidInvoicesSelected(object sender, EventArgs e)
+        {
+            this.activateSelectedPanel(new UnpaidInvoicesPanel());
+            showBackButton();
+        }
+
         private void activateSelectedPanel(ContentPanel panel)
         {
             this.Controls.Remove(this.contentPanel);
@@ -67,6 +91,10 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.contentPanel.ClientSelected += this.OnClientSelected;
             this.contentPanel.RoomSelected += this.OnRoomSelected;
             this.contentPanel.PriceSelected += this.OnPriceSelected;
+            this.contentPanel.MakeReservationSelected += this.OnMakeReservationSelected;
+            this.contentPanel.FinancialReportSelected += this.OnFinancialReportSelected;
+            this.contentPanel.ShowReservationsSelected += this.OnShowReservationsSelected;
+            this.contentPanel.UnpaidInvoicesSelected += this.OnUnpaidInvoicesSelected;
         }
     }
 }

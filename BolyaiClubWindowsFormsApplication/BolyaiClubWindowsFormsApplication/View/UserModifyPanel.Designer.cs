@@ -11,8 +11,8 @@ namespace BolyaiClubWindowsFormsApplication.View
 
         private void InitializeCompontent()
         {
-            // TODO
             this.titleLabel.Text = "User - modify";
+            this.actionButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.UserEditButton;
         }
 
     }

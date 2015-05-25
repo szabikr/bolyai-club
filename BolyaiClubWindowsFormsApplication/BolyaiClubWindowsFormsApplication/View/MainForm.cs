@@ -21,9 +21,7 @@ namespace BolyaiClubWindowsFormsApplication.View
             InitializeComponent();
 
             this.basePanel = new LoginPanel();
-
             this.basePanel.LoggedIn += this.OnLoggedIn;
-
             this.Controls.Add(basePanel);
         }
 
@@ -32,6 +30,11 @@ namespace BolyaiClubWindowsFormsApplication.View
             this.Controls.Remove(this.basePanel);
             this.basePanel = new MainPanel();
             this.Controls.Add(this.basePanel);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
 

@@ -12,6 +12,7 @@ namespace BolyaiClubWindowsFormsApplication.View
         private void InitializeComponent()
         {
             this.titleLabel.Text = "Client - modify";
+            this.actionButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.ClientEditButton;
         }
 
     }

@@ -18,11 +18,11 @@ namespace BolyaiClubWindowsFormsApplication.Controller
             }
         }
 
-        public static void AddRenter(Client renter)
+        public static void AddClient(Client client)
         {
             using (var context = new BolyaiClubDbContext())
             {
-                context.Clients.Add(renter);
+                context.Clients.Add(client);
                 context.SaveChanges();
             }
         }
@@ -108,7 +108,7 @@ namespace BolyaiClubWindowsFormsApplication.Controller
             }
         }
 
-        internal static Client GetRenter(int RenterId)
+        internal static Client GetClient(int RenterId)
         {
             using (var context = new BolyaiClubDbContext())
             {
@@ -116,7 +116,7 @@ namespace BolyaiClubWindowsFormsApplication.Controller
             }
         }
 
-        public static List<Client> GetRenters()
+        public static List<Client> GetClients()
         {
             List<Client> renters = new List<Client>();
             using (var context = new BolyaiClubDbContext())

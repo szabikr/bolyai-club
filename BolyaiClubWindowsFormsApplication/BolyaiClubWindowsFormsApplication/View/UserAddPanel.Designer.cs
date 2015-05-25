@@ -13,6 +13,7 @@ namespace BolyaiClubWindowsFormsApplication.View
         {
             //TODO:
             this.titleLabel.Text = "User - add";
+            this.actionButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.UserAddButton;
         }
 
     }

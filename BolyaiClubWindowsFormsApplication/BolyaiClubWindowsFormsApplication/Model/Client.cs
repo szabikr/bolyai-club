@@ -6,7 +6,7 @@ using System.Data.Entity.Spatial;
 
 namespace BolyaiClubWindowsFormsApplication.Model
 {
-    [Table("Renter")]
+    [Table("Client")]
     public class Client
     {
         public Client()

@@ -11,8 +11,8 @@ namespace BolyaiClubWindowsFormsApplication.View
 
         private void InitializeComponent()
         {
-            // TODO
             this.titleLabel.Text = "User - remove";
+            this.actionButton.BackgroundImage = global::BolyaiClubWindowsFormsApplication.Properties.Resources.UserDeleteButton;
         }
 
     }
